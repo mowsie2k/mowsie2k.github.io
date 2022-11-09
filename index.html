@@ -1,6 +1,198 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <title>mowsie2k</title>
-    </head>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ian Stacy: Full Stack Engineer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Local Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <!-- Side navigation -->
+    <div class="sidenav flex-column-centered">
+        <div class="circle" style="margin-top: 20px;">
+            <img id="profile_image" src="img/profile_image_square.jpg" />
+        </div>
+        <h1> Ian Stacy</h1>
+        <div class="flex-row-centered" style="margin-bottom: 20px;">
+            <i style="padding-left: 10px; padding-right: 10px;" class="fa-brands fa-github fa-2x"></i>
+            <i style="padding-left: 10px; padding-right: 10px;" class="fa-brands fa-twitter fa-2x"></i>
+            <i style="padding-left: 10px; padding-right: 10px;" class="fa-brands fa-linkedin fa-2x"></i>
+        </div>
+        <div class="colored">
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+    <!-- Page content -->
+    <div class="main">
+
+        <div class="flex-column-centered">
+            <h1>A VERY BASIC PORTFOLIO</h1>
+            <h2>For the purposes of providing some examples of my work quickly.</h2>
+        </div>
+
+        <div class="section shadowbox" id="about">
+            <h1>About</h1>
+            <p>Hey there! My name is Ian Stacy and I'm a full stack engineer based on the east coast of the United States.</p>
+            <p>I like to craft scalable software solutions that deliver great user experiences and robust data handling.
+            </p>
+            <p>My designs focus on usability while still maintaining a fashionable exterior. I am more likely to spend
+                my time building stylesheets than making designs in Illustrator.</p>
+            <p>I can work with many different backend solutions and can function independently from the provided stack.
+                If I don't know a tool you can bet I'll learn it given the opportunity.</p>
+            <p>When I build applications I focus on performance and scalability in the codebase.</p>
+
+        </div>
+
+        <div class="section shadowbox" id="portfolio">
+            <h1>Portfolio</h1>
+            <p>Here are some items I worked on recently.</p>
+            <hr>
+            <h2>Commercial Kitchen Equipment Website, Intranet Portal and Backend</h2>
+            <div class="portfolio-item flex-row-centered">
+                <div class="column50 flex-column-centered" style="text-align: left">
+                    <img src="img/website_screenshot1.png" style="width: 400px;"></img>
+                </div>
+                <div class="column50" style="text-align: left;">
+                    <p>This project was for a commercial kitchen equipment repair company. The scope of the project
+                        initially started as just a landing page for the business but slowly evolved until it became a
+                        total intranet system for logging appointments and assigning employees.</p>
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Cybersecurity and Pentesting Company Website with Custom Ticketing and CMS</h2>
+            <div class="portfolio-item flex-row-centered">
+                <div class="column50 flex-column-centered" style="text-align: left">
+                    <img src="img/website_screenshot2.png" style="width: 400px;"></img>
+                </div>
+                <div class="column50" style="text-align: left;">
+                    <p>This project is still ongoing but after building the website we decided to add an intranet
+                        portal, a ticketing system for tracking employee assignments and a content management system to
+                        allow the owner to post news and updates.</p>
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Embedded Firmware for Network Security Hardware</h2>
+            <div class="portfolio-item flex-row-centered">
+                <div class="column50 flex-column-centered" style="text-align: left">
+                    <img src="https://via.placeholder.com/400x230" style="width: 400px;"></img>
+                </div>
+                <div class="column50" style="text-align: left;">
+                    <p>This system was designed and built under an NDA. It was made to run on a specific low level
+                        system-on-a-chip and to be totally portable and modular. Later hardware revisions needed to be
+                        able to use the same firmware (hardware agnostic). Worked heavily in c++ and bash for building
+                        TUI and network structure.</p>
+                    <ul>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>Python</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section shadowbox" id="projects">
+            <h1>Projects</h1>
+            <p>Here are some side projects I worked on lately.</p>
+            <hr>
+            <h2>Dota 2 (Video Game) Statistics API with Python Data Analytics</h2>
+            <div class="portfolio-item flex-row-centered">
+                <div class="column50 flex-column-centered" style="text-align: left">
+                    <img src="https://via.placeholder.com/400x230" style="width: 400px;"></img>
+                </div>
+                <div class="column50" style="text-align: left;">
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+            </div>
+            <h2>Hex Injection Tool</h2>
+            <div class="portfolio-item flex-row-centered">
+                <div class="column50 flex-column-centered" style="text-align: left">
+                    <img src="https://via.placeholder.com/400x230" style="width: 400px;"></img>
+                </div>
+                <div class="column50" style="text-align: left;">
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section shadowbox" id="contact">
+            <h1>Contact</h1>
+            <h2>item 1</h2>
+            <div class="portfolio-item flex-row-centered">
+                <div class="column50" style="text-align: left;">
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+                <div class="column50" style="text-align: left;">
+                    <ul>
+                        <li>PHP</li>
+                        <li>MySQL</li>
+                        <li>JavaScript</li>
+                        <li>CSS</li>
+                        <li>Python</li>
+                        <li>Shell Script</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="" async defer></script>
+</body>
+
 </html>

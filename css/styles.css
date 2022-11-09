@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --color1: #DEE2EC;
+    --color2: #8C756A;
+    --color3: #1AC8DB;
+    --color4_solid: rgba(2, 146, 183, 1);
+    --color4_transparent: rgba(2, 146, 183, 0.5);
+    --color_white: white;
+    --color_black: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--color_white);
+}
+
+/*
+ * Components
+ */
+.shadowbox {
+    border: 2px solid var(--color4_solid);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.flex-column-centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-row-centered {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.column50 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+.circle{
+    width: 220px;
+    height: 220px;
+    padding-top:10%;
+    overflow:hidden;
+    position:relative;
+    border-radius:50%;
+  }
+  
+.colored {
+    width: 100%;
+    background-color: var(--color1);
+}
+#profile_image {
+    position:absolute;
+    top:50%;
+    left:50%;
+    min-width:100%;
+    height:100%;
+    transform:translate(-50%,-50%);
+  }
+
+.section {
+    padding: 20px;
+    margin: 20px;
+}
+
+/* The sidebar menu */
+.sidenav {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
+
+    width: 320px;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 20px;
+    /* Stay at the top */
+    left: 20px;
+    background-color: var(--color4_solid);
+    /* Black */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    /* padding: 20px; */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: var(--color_black);
+    display: block;
+    padding-top: 20px;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: var(--color3);
+}
+
+/* Style page content */
+.main {
+    margin-left: 340px;
+    /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
